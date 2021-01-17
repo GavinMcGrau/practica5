@@ -1,5 +1,5 @@
 pages:
- image: node:latest
+ image: node:14.15.4-buster
  stage: deploy
  script:
   - npm install --progress=false
