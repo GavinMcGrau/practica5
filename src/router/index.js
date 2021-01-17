@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 // Views
 import Interface from "../views/Interface.vue";
@@ -66,8 +67,8 @@ const routes = [
   },
 ];
 
-const router = new VueRouter({
-  mode: "history",
+const router = createRouter({
+  mode: createWebHashHistory(),
   base: process.env.BASE_URL,
   routes,
 });
