@@ -69,7 +69,7 @@ const routes = [
 
 const router = createRouter({
   mode: createWebHashHistory(),
-  base: "https://polarcs.gitlab.io/practica-5/",
+  base: "/practica-5/",
   routes,
 });
 
