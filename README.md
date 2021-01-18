@@ -64,8 +64,12 @@ El fichero index.html contiene el código de la aplicación. Incluye tanto el HT
 La información de las películas se modela mediante un array en el que cada película consiste en un objeto con las siguientes claves:
 
 **titulo**: Título de la película.
+
 **director**: Director de la película.
-**miniatura**: URL de la carátula de la película que se muestra como miniatura. Puede proporcionarse una URL pública o la URL de las imágenes alojadas en la carpeta files.
+
+**miniatura**: URL de la carátula de la película que se muestra como miniatura. 
+
+Puede proporcionarse una URL pública o la URL de las imágenes alojadas en la carpeta files.
 El array que contiene las películas se almacena en el localStorage del navegador bajo la clave mis_peliculas. Al iniciarse la aplicación, se comprueba si ya hay un array de películas almacenado en localStorage,
 
 ### Vistas
