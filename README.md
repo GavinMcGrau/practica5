@@ -38,6 +38,9 @@ npm run lint
 Eventos, Objetos, Arrays, JSON, Storage API, Boolean, operadores lógicos y MVC. - Entrega P2P: MVC Cliente
 Versión: 22 de Mayo de 2020
 
+PARA ACCEDER A LA PRACTICA: [AQUÍ](https://polarcs.gitlab.io/practica-5)
+
+
 ### Objetivos
 Practicar HTML, CSS y JS y afianzar el concepto de MVC (Modelo-Vista-Controlador).
 Entender el uso y la problemática de localStorage como almacén de datos. 
