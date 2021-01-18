@@ -38,7 +38,7 @@ npm run lint
 Eventos, Objetos, Arrays, JSON, Storage API, Boolean, operadores lógicos y MVC. - Entrega P2P: MVC Cliente
 Versión: 22 de Mayo de 2020
 
-PARA ACCEDER A LA PRACTICA: [AQUÍ](https://polarcs.gitlab.io/practica-5)
+# **PARA ACCEDER A LA PRACTICA**: [AQUÍ](https://polarcs.gitlab.io/practica-5)
 
 
 ### Objetivos
