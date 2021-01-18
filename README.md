@@ -50,11 +50,14 @@ En el código proporcionado sólo está implementada la funcionalidad de listar 
 
 ### Descargar el código del proyecto
 El proyecto debe descargarse o clonarse en el ordenador desde el que se está trabajando. Para ello podemos descargar el paquete zip con el código desde el desplegable verde que está en la parte superior de la página de GitHub y que indica "Code" y ahí seleccionar la opción "Download ZIP". Alternativamente se puede usar GIT si se conoce para clonar el proyecto, el comando sería el siguiente:
-
+```
 $ git clone https://github.com/ging-moocs/MOOC_html_mod4-MVC_cliente_entrega
+```
 A continuación se debe acceder al directorio de trabajo y abrir el fichero index.html con el editor de la elección del alumno.
-
+```
 $ cd MOOC_html_mod4-MVC_cliente_entrega
+```
+
 El fichero index.html contiene el código de la aplicación. Incluye tanto el HTML de la página, como el CSS y el código JavaScript que implementa la lógica de la aplicación siguiendo el patrón MVC. Para iniciar la aplicación web basta con abrir el fichero index.html en el navegador (Chrome/Firefox). En las siguientes secciones se explica cada parte de esta lógica.
 
 ### Modelo de datos
@@ -66,7 +69,11 @@ miniatura: URL de la carátula de la película que se muestra como miniatura. Pu
 El array que contiene las películas se almacena en el localStorage del navegador bajo la clave mis_peliculas. Al iniciarse la aplicación, se comprueba si ya hay un array de películas almacenado en localStorage,
 
 ### Vistas
-Las vistas generan el código HTML que se inserta en el bloque <div id=“main”></div>, como respuesta a los eventos que la aplicación recibe. Son funciones JavaScript que generan dinámicamente el código HTML de cada pantalla de la aplicación en función de los parámetros recibidos. Las vistas con las que cuenta la aplicación son las siguientes:
+Las vistas generan el código HTML que se inserta en el bloque:
+```
+<div id=“main”></div>
+```
+Como respuesta a los eventos que la aplicación recibe. Son funciones JavaScript que generan dinámicamente el código HTML de cada pantalla de la aplicación en función de los parámetros recibidos. Las vistas con las que cuenta la aplicación son las siguientes:
 
 indexView(peliculas): Es la vista principal de la aplicación. Recibe como parámetro el array con todas las películas y genera el código HTML necesario para mostrar todas las películas con su título y miniatura, así como los botones que lanzan las diferentes acciones que se pueden aplicar sobre las mismas actualmente. Falta añadir los botones correspondientes a las acciones a implementar por el alumno.
 editView(i, pelicula): Es la vista que permite editar la información sobre una película existente. Recibe como parámetro la posición que ocupa la película en el array y el objeto que contiene la información de la película. Renderiza un formulario que permite editar dicha información
@@ -128,15 +135,17 @@ Para ayudar al desarrollo, se provee una herramienta de autocorrección que prue
 
 Para instalar y hacer uso de la herramienta de autocorrección en el ordenador local, ejecuta los siguientes comandos en el directorio del proyecto:
 
+```
 $ npm install -g moocauto     ## Instala el programa de test
 $ moocauto                    ## Pasa los tests al fichero a entregar
 ............................  ## en el directorio de trabajo
-... (resultado de los tests)
-También se puede instalar como paquete local, en el caso de que no se dispongas de permisos en el ordenador desde el que estás trabajando:
+```
 
+También se puede instalar como paquete local, en el caso de que no se dispongas de permisos en el ordenador desde el que estás trabajando:
+```
 $ npm install moocauto         ## Instala el programa de test
 $ npx moocauto                 ## Pasa los tests al fichero a entregar
 ............................   ## en el directorio de trabajo
-
+```
 Se puede pasar la herramienta de autocorrección tantas veces como se desee.
 
